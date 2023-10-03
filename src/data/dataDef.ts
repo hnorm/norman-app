@@ -108,6 +108,21 @@ export interface Testimonial {
 }
 
 /**
+ * Certifications section
+ */
+export interface CertificationSection {
+  imageSrc?: string | StaticImageData;
+  certifications: Certification[];
+}
+
+export interface Certification {
+  image?: string | StaticImageData;
+  url: string;
+  provider: string;
+  name: string;
+}
+
+/**
  * Contact section
  */
 export interface ContactSection {

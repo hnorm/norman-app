@@ -27,6 +27,8 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import terraformCert from '../images/hashicorp-certified-terraform-associate-003.png';
+import awsCloudPractitionerCert from '../images/aws-certified-cloud-practitioner.png';
 import {
   About,
   ContactSection,
@@ -38,6 +40,7 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  CertificationSection
 } from './dataDef';
 
 /**
@@ -60,6 +63,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
+  Certifications: 'certifications',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -108,12 +112,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Victoria, BC', Icon: MapIcon },
+    { label: 'Age', text: '29', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon },
+    { label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon },
+    { label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -298,10 +302,40 @@ export const experience: TimelineItem[] = [
     location: 'Garage Startup Studio',
     title: 'Junior bug fixer',
     content: (
+      <>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
+      </>
+    ),
+  },
+];
+
+
+export const projects: TimelineItem[] = [
+  {
+    date: 'March 2010 - Present',
+    location: 'Awesome Development Company',
+    title: 'Senior UX Engineer',
+    content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
         anything else that would be useful for an employer to know.
       </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Garage Startup Studio',
+    title: 'Junior bug fixer',
+    content: (
+      <>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
+      </>
     ),
   },
 ];
@@ -326,6 +360,40 @@ export const testimonial: TestimonialSection = {
       name: 'Someone else',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
+  ],
+};
+
+/**
+ * Certifications section
+ */
+export const certification: CertificationSection = {
+  imageSrc: testimonialImage,
+  certifications: [
+    {
+      image: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/69208438',
+      url: 'https://google.accredible.com/99567853-4c8a-4384-8cfe-0fbbd0b75548',
+      provider: 'Google Cloud Platform (GCP)',
+      name: 'Professional Cloud DevOps Engineer',
+    },
+    {
+      image: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/55019916',
+      url: 'https://google.accredible.com/bbdd7997-7441-4f64-ac8a-8c184f1dd045',
+      provider: 'Google Cloud Platform (GCP)',
+      name: 'Associate Cloud Engineer',
+
+    },
+    {
+      image: awsCloudPractitionerCert,
+      url: 'https://www.credly.com/badges/d0f112fd-66d2-40d8-a035-ee60d67c3dd9/public_url',
+      provider: 'Amazon Web Services (AWS)',
+      name: 'Certified Cloud Practitioner', 
+    },
+    {
+      image: terraformCert,
+      url: 'https://www.credly.com/badges/6d08795c-ae3d-440e-84bf-4a116cd7a9d1/public_url',
+      provider: 'HashiCorp',
+      name: 'Terraform Associate (003)', 
     },
   ],
 };
@@ -365,9 +433,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
