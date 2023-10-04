@@ -73,10 +73,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hi, I'm Norman Hu.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm a <strong className="text-stone-100">Software Developer</strong> currently looking for a
+        <strong className="text-stone-100"> London</strong> based role in tech.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        An experienced consultant of over 6 years, I have an all-round knowledge which includes
+        coding, testing, cloud infrastructure deployment, business analysis, project management, user stories and documentation.
+      </p>
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
         registrar and site builder.
@@ -85,7 +93,7 @@ export const heroData: Hero = {
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -108,16 +116,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Currently residing in Sydney, I will be relocating to London in January next year for a new adventure. `,
   aboutItems: [
-    { label: 'Location', text: 'Victoria, BC', Icon: MapIcon },
-    { label: 'Age', text: '29', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon },
-    { label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
+    { label: 'Relocating to', text: 'London, UK', Icon: MapIcon },
+    { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
+    // { label: 'Age', text: '30', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Australian', Icon: FlagIcon },
+    { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -387,13 +393,13 @@ export const certification: CertificationSection = {
       image: awsCloudPractitionerCert,
       url: 'https://www.credly.com/badges/d0f112fd-66d2-40d8-a035-ee60d67c3dd9/public_url',
       provider: 'Amazon Web Services (AWS)',
-      name: 'Certified Cloud Practitioner', 
+      name: 'Certified Cloud Practitioner',
     },
     {
       image: terraformCert,
       url: 'https://www.credly.com/badges/6d08795c-ae3d-440e-84bf-4a116cd7a9d1/public_url',
       provider: 'HashiCorp',
-      name: 'Terraform Associate (003)', 
+      name: 'Terraform Associate (003)',
     },
   ],
 };

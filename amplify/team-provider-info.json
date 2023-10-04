@@ -1,15 +1,23 @@
 {
-  "dev": {
+  "main": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-normanapp-dev-143850-authRole",
-      "UnauthRoleArn": "arn:aws:iam::467241320443:role/amplify-normanapp-dev-143850-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::467241320443:role/amplify-normanapp-dev-143850-authRole",
+      "AuthRoleName": "amplify-normanapp-main-122903-authRole",
+      "UnauthRoleArn": "arn:aws:iam::467241320443:role/amplify-normanapp-main-122903-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::467241320443:role/amplify-normanapp-main-122903-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-normanapp-dev-143850-deployment",
-      "UnauthRoleName": "amplify-normanapp-dev-143850-unauthRole",
-      "StackName": "amplify-normanapp-dev-143850",
-      "StackId": "arn:aws:cloudformation:eu-west-1:467241320443:stack/amplify-normanapp-dev-143850/606d7fe0-619e-11ee-88cb-063b9049abcb",
-      "AmplifyAppId": "d2u6a1amaks4jw"
+      "DeploymentBucketName": "amplify-normanapp-main-122903-deployment",
+      "UnauthRoleName": "amplify-normanapp-main-122903-unauthRole",
+      "StackName": "amplify-normanapp-main-122903",
+      "StackId": "arn:aws:cloudformation:eu-west-1:467241320443:stack/amplify-normanapp-main-122903/68dfbe60-6255-11ee-81dd-02a6ae0c4e2b",
+      "AmplifyAppId": "d3zy794osvmim"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3zy794osvmim",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
