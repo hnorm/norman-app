@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { FC, memo, useEffect, useMemo, useState } from 'react';
 
 import { isApple, isMobile } from '../../config';
-import { SectionId, certification } from '../../data/data';
+import { certification, SectionId } from '../../data/data';
 import { Certification } from '../../data/dataDef';
 import Section from '../Layout/Section';
 
@@ -102,14 +102,17 @@ const Certifications: FC = memo(() => {
   );
 });
 
-function resolveSrcBadge(image: string | import("next/image").StaticImageData | undefined) {
-  if (!image) return undefined;
-  return typeof image === 'string' ? image : image.src;
-}
-
 const Certification: FC<{ certification: Certification }> = memo(
-  ({ certification: { image, url, provider, name } }) => (
-    <div
+  ({ certification: { image, url, provider, name } }) => {
+
+    const resolveSrcBadge = memo(
+      (image: string | import("next/image").StaticImageData | undefined) => {
+        if (!image) return undefined;
+        return typeof image === 'string' ? image : image.src;
+      }
+    )
+
+    return <div
       className={classNames(
         'flex shrink-0 snap-start snap-always items-start gap-y-4 p-2 transition-opacity duration-1000'
       )}>
@@ -131,7 +134,7 @@ const Certification: FC<{ certification: Certification }> = memo(
         </div>
       </a>
     </div>
-  ),
+  },
 );
 
 export default Certifications;

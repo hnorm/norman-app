@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
@@ -13,6 +13,8 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
+import awsCloudPractitionerCert from '../images/aws-certified-cloud-practitioner.png';
+import terraformCert from '../images/hashicorp-certified-terraform-associate-003.png';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -27,10 +29,9 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import terraformCert from '../images/hashicorp-certified-terraform-associate-003.png';
-import awsCloudPractitionerCert from '../images/aws-certified-cloud-practitioner.png';
 import {
   About,
+  CertificationSection,
   ContactSection,
   ContactType,
   Hero,
@@ -39,8 +40,7 @@ import {
   SkillGroup,
   Social,
   TestimonialSection,
-  TimelineItem,
-  CertificationSection
+  TimelineItem
 } from './dataDef';
 
 /**
