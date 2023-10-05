@@ -105,12 +105,12 @@ const Certifications: FC = memo(() => {
 const Certification: FC<{ certification: Certification }> = memo(
   ({ certification: { image, url, provider, name } }) => {
 
-    const resolveSrcBadge = memo(
-      (image: string | import("next/image").StaticImageData | undefined) => {
-        if (!image) return undefined;
-        return typeof image === 'string' ? image : image.src;
-      }
-    )
+    const resolveSrcBadge = (image: string | import("next/image").StaticImageData | undefined) => {
+      if (!image) return undefined;
+      return typeof image === 'string' ? image : image.src;
+    }
+
+    const badgeSrc = resolveSrcBadge(image);
 
     return <div
       className={classNames(
@@ -118,7 +118,7 @@ const Certification: FC<{ certification: Certification }> = memo(
       )}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <div className="flex flex-row items-center gap-x-4">
-          <img className="h-32 w-32 rounded-full" src={`${resolveSrcBadge(image)}`} />
+          <img className="h-32 w-32 rounded-full" src={`${badgeSrc}`} />
           <div className="flex flex-col align-items-centre">
             <div className="flex flex-row gap-x-1">
 
