@@ -79,9 +79,9 @@ const Certifications: FC = memo(() => {
 
         <div className="z-10 px-4 lg:px-0">
 
-          <div className="relative h-max">
-            <h2 className="self-center text-xl font-bold text-white uppercase">Certifications</h2>
-            <span className="absolute inset-x-0 -bottom-1 border-b-2 border-orange-400"></span>
+          <div className="flex justify-center md:justify-start relative h-max">
+            <h2 className="text-xl font-bold text-white uppercase">Certifications</h2>
+            <span className="absolute inset-x-0 -bottom-1 border-b-2 border-yellow"></span>
           </div>
 
 

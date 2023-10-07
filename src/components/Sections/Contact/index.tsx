@@ -1,4 +1,4 @@
-import { DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import { FC, memo } from 'react';
 
@@ -14,7 +14,7 @@ import ContactForm from './ContactForm';
 
 const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Email]: { Icon: EnvelopeIcon, srLabel: 'Email' },
-  [ContactType.Phone]: { Icon: DevicePhoneMobileIcon, srLabel: 'Phone' },
+  [ContactType.Phone]: { Icon: PhoneIcon, srLabel: 'Phone' },
   [ContactType.Location]: { Icon: MapPinIcon, srLabel: 'Location' },
   [ContactType.Github]: { Icon: GithubIcon, srLabel: 'Github' },
   [ContactType.LinkedIn]: { Icon: LinkedInIcon, srLabel: 'LinkedIn' },
@@ -47,11 +47,12 @@ const Contact: FC = memo(() => {
                     <dd className="flex items-center">
                       <a
                         className={classNames(
-                          '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                          '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-yellow focus:outline-none focus:ring-2 focus:ring-yellow',
                           { 'hover:text-white': href },
                         )}
                         href={href}
-                        target="_blank">
+                        target={href?.startsWith("http") ? "_blank" : ""}
+                        >
                         <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
                         <span className="ml-3 text-sm sm:text-base">{text}</span>
                       </a>

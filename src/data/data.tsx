@@ -2,17 +2,20 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
+  EnvelopeIcon,
   // CalendarIcon,
   FlagIcon,
   MapIcon,
+  // PhoneIcon,
   SparklesIcon,
+  // MapPinIcon
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import awsCloudPractitionerCert from '../images/aws-certified-cloud-practitioner.png';
 import terraformCert from '../images/hashicorp-certified-terraform-associate-003.png';
 import heroImage from '../images/header-background.webp';
@@ -42,6 +45,7 @@ import {
   TestimonialSection,
   TimelineItem
 } from './dataDef';
+
 
 /**
  * Page meta data
@@ -73,32 +77,33 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hi, I'm Norman Hu.`,
+  name: 'Norman Hu',
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Software Developer</strong> currently looking for a
-        <strong className="text-stone-100"> London</strong> based role in tech.
+      <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
+        I'm a <strong className='text-stone-100'>Software Developer</strong> currently looking for a
+        <strong className='text-stone-100'> London</strong>-based role in tech.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         An experienced consultant of over 6 years, I have an all-round knowledge which includes
         coding, testing, cloud infrastructure deployment, business analysis, project management, user stories and documentation.
       </p>
-      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+      {/* <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
+        I'm a Victoria based <strong className='text-stone-100'>Full Stack Software Engineer</strong>, currently working
+        at <strong className='text-stone-100'>Instant Domains</strong> helping build a modern, mobile-first, domain
         registrar and site builder.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
+        In my free time time, you can catch me training in <strong className='text-stone-100'>Muay Thai</strong>,
+        plucking my <strong className='text-stone-100'>banjo</strong>, or exploring beautiful{' '}
+        <strong className='text-stone-100'>Vancouver Island</strong>.
       </p> */}
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://normanapp-assets.s3.eu-west-1.amazonaws.com/Norman-Hu-resume.pdf',
+      target: '_blank',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -278,42 +283,55 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2012 - 2017',
+    location: 'University of NSW, Sydney',
+    title: 'Bachelor of Engineering (Hons) (Civil) & Bachelor of Commerce (Finance)',
+    content: <p></p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2018 - 2020',
+    location: 'University of NSW, Sydney',
+    title: 'Certificate of Computing',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2022 - Present',
+    title: 'Cognizant Servian',
+    location: 'Senior Consultant',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="md:list-disc md:list-outside md:ml-4">
+        <li>Extended an existing <b>GraphQL</b> API written in <b>C#</b> and <b>MS SQL Server.</b></li>
+        <li>Collaborated with multiple stakeholders to form business requirements, creating user stories & acceptance criteria to add new features.</li>
+        <li>Developed <b>Python</b> functions hosted on <b>GCP</b> to ingest webhooks, transform data, create backups and monitor systems.</li>
+        <li>Designed cloud infrastructure solutions covering security, reliability, durability, cost, support and other business requirements.</li>
+        <li>Created <b>Terraform</b> code and deployed infrastructure on GCP for data platforms and websites.</li>
+        <li>Designed test cases and conducted testing in managed in <b>qtest</b>. </li>
+        <li>Wrote technical docs, user guides, knowledge base articles.</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2021 - 2022',
+    title: 'Arcadis',
+    location: 'Transport Planner',
     content: (
-      <>
-        <p>
-          Describe work, special projects, notable achievements, what technologies you have been working with, and
-          anything else that would be useful for an employer to know.
-        </p>
-      </>
+      <ul className="md:list-disc md:list-outside md:ml-4">
+        <li>Wrote transport planning assessments, government strategy reports, and proposals to shape our urban environment.</li>
+      </ul>
+    ),
+  },
+  {
+    date: '2017 - 2020',
+    title: 'Beca',
+    location: 'Graduate Transport Planner',
+    content: (
+      <ul className="md:list-disc md:list-outside md:ml-4">
+        <li>Built a <b>C#</b> application using <b>WinForms</b> and <b>MS SQL Server</b> to automate data analytics</li>
+        <li>Used <b>VBA</b> in Excel for data analytics and creating visualisations of traffic data, Opal data and other transport datasets.</li>
+      </ul>
     ),
   },
 ];
@@ -414,23 +432,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'normanhujun@gmail.com',
+      href: 'mailto:normanhujun@gmail.com',
     },
+    // {
+    //   type: ContactType.Phone,
+    //   text: '+xx xxx xxx xxx',
+    //   href: 'tel:+xxxxxxxxxxx',
+    // },
     {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'linkedin.com/in/hnorm/',
+      href: 'https://www.linkedin.com/in/hnorm/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'github.com/hnorm',
+      href: 'https://www.github.com/hnorm',
     },
   ],
 };
@@ -439,9 +457,12 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
+
+  { label: 'Email', Icon: EnvelopeIcon, href: 'mailto:normanhujun@gmail.com' },
+  // { label: 'Phone', Icon: PhoneIcon, href: 'tel:+xxxxxxxxxxx' },
+  // { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
+  { label: 'Github', Icon: GithubIcon, href: 'https://www.github.com/hnorm' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/hnorm/' },
+  // { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
+  // { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
