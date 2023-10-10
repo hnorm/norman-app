@@ -51,8 +51,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Norman Hu',
+  description: "Norman Hu's resume website",
 };
 
 /**
@@ -428,7 +428,7 @@ export const certification: CertificationSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Contact me for any questions and feel free to share my Resume.',
   items: [
     {
       type: ContactType.Email,
@@ -438,18 +438,18 @@ export const contact: ContactSection = {
     // {
     //   type: ContactType.Phone,
     //   text: '+xx xxx xxx xxx',
-    //   href: 'tel:+xxxxxxxxxxx',
+    //   href: 'tel:+',
     // },
     {
       type: ContactType.LinkedIn,
       text: 'linkedin.com/in/hnorm/',
       href: 'https://www.linkedin.com/in/hnorm/',
     },
-    {
-      type: ContactType.Github,
-      text: 'github.com/hnorm',
-      href: 'https://www.github.com/hnorm',
-    },
+    // {
+    //   type: ContactType.Github,
+    //   text: 'github.com/hnorm',
+    //   href: 'https://www.github.com/hnorm',
+    // },
   ],
 };
 

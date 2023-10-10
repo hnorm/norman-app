@@ -2,7 +2,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline
 import classNames from 'classnames';
 import { FC, memo } from 'react';
 
-import { contact, SectionId } from '../../../data/data';
+import { contact, heroData, SectionId } from '../../../data/data';
 import { ContactType, ContactValue } from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
@@ -25,6 +25,8 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
 
 const Contact: FC = memo(() => {
   const { headerText, description, items } = contact;
+  const { href, target, text, primary, Icon } = heroData.actions[0]
+
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6">
@@ -52,7 +54,7 @@ const Contact: FC = memo(() => {
                         )}
                         href={href}
                         target={href?.startsWith("http") ? "_blank" : ""}
-                        >
+                      >
                         <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
                         <span className="ml-3 text-sm sm:text-base">{text}</span>
                       </a>
@@ -61,6 +63,21 @@ const Contact: FC = memo(() => {
                 );
               })}
             </dl>
+
+            <div className="flex items-center">
+              <a
+                className={classNames(
+                  'flex flex-none gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                  primary ? 'border-yellow ring-yellow' : 'border-white ring-white',
+                )}
+                href={href}
+                target={target}
+                key={text}>
+                {text}
+                {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

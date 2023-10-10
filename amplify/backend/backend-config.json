@@ -1,4 +1,39 @@
 {
+  "api": {
+    "normanapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "normanappContactformUpload": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "normanapp"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "lastPushTimeStamp": "2023-10-04T04:24:07.606Z",
@@ -7,6 +42,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_normanappContactformUpload_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "normanappContactformUpload"
+        }
+      ]
+    },
+    "AMPLIFY_function_normanappContactformUpload_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "normanappContactformUpload"
+        }
+      ]
+    },
+    "AMPLIFY_function_normanappContactformUpload_sesDestinationEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "normanappContactformUpload"
+        }
+      ]
+    },
+    "AMPLIFY_function_normanappContactformUpload_sesEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "normanappContactformUpload"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

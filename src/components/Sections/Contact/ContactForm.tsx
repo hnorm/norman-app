@@ -1,4 +1,7 @@
+import { API } from 'aws-amplify';
 import { FC, memo, useCallback, useMemo, useState } from 'react';
+
+import { createContactForm } from '../../../../src/graphql/mutations';
 
 interface FormData {
   name: string;
@@ -32,9 +35,18 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
+
+      await API.graphql({
+        query: createContactForm,
+        variables: {
+          input: {
+            name: data.name,
+            email: data.email,
+            message: data.message,
+          }
+        }
+      });
+
       console.log('Data to send: ', data);
     },
     [data],

@@ -17,6 +17,17 @@
           "appId": "d3zy794osvmim",
           "type": "cicd"
         }
+      },
+      "function": {
+        "normanappContactformUpload": {
+          "deploymentBucketName": "amplify-normanapp-main-122903-deployment",
+          "s3Key": "amplify-builds/normanappContactformUpload-75636455426d4e313871-build.zip",
+          "sesEmail": "normanapp.contactform@normanhu.com",
+          "sesDestinationEmail": "normanhujun@gmail.com"
+        }
+      },
+      "api": {
+        "normanapp": {}
       }
     }
   }
