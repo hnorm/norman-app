@@ -137,70 +137,119 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming',
     skills: [
       {
-        name: 'English',
+        name: 'C#',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Python',
+        level: 8,
       },
       {
-        name: 'Spanish',
+        name: 'Javascript',
+        level: 8,
+      },
+      {
+        name: 'HTML/CSS',
+        level: 5,
+      },
+      {
+        name: 'SQL',
+        level: 9,
+      },
+      {
+        name: 'HCL (Terraform)',
+        level: 10,
+      },
+      {
+        name: 'Bash',
         level: 3,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Technologies',
     skills: [
       {
-        name: 'React',
+        name: '.NET',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'React',
+        level: 7,
+      },
+      {
+        name: 'Nodejs',
+        level: 7,
+      },
+      {
+        name: 'Nextjs',
         level: 7,
       },
       {
         name: 'GraphQL',
         level: 6,
       },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
       {
-        name: 'Node.js',
+        name: 'Docker',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'MS SQL Server',
+        level: 8,
+      },
+      {
+        name: 'BigQuery',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Cloud/DevOps',
+    skills: [
+      {
+        name: 'GCP',
+        level: 8,
+      },
+      {
+        name: 'AWS',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Terraform',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Tools',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+
+        name: 'Visual Studio Code',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Git/Github',
+        level: 6,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Bitbucket',
+        level: 10,
+      },
+      {
+        name: 'JIRA',
+        level: 10,
+      },
+      {
+        name: 'Confluence',
+        level: 10,
+      },
+      {
+        name: 'Postman',
+        level: 10,
       },
     ],
   },
