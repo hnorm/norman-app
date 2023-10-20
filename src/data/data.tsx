@@ -81,12 +81,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        I'm a <strong className='text-stone-100'>Software Developer</strong> currently looking for a
-        <strong className='text-stone-100'> London</strong>-based role in tech.
+        <strong className='text-stone-100'></strong>
+        A .NET Software Developer
+        with experience in building websites, databases, backend & cloud infrastructure.
+        I am looking for new job based in London from 2024.
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         An experienced consultant of over 6 years, I have an all-round knowledge which includes
-        coding, testing, cloud infrastructure deployment, business analysis, project management, user stories and documentation.
+        coding, testing, cloud, business analysis, project management, user stories and documentation.
       </p>
       {/* <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         I'm a Victoria based <strong className='text-stone-100'>Full Stack Software Engineer</strong>, currently working
@@ -141,68 +143,72 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'C#',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Python',
-        level: 8,
+        level: 7,
       },
       {
-        name: 'Javascript',
-        level: 8,
+        name: 'Javascript/Typescript',
+        level: 7,
       },
       {
         name: 'HTML/CSS',
         level: 5,
       },
       {
-        name: 'SQL',
+        name: 'HCL (Terraform)',
         level: 9,
       },
       {
-        name: 'HCL (Terraform)',
-        level: 10,
-      },
-      {
-        name: 'Bash',
-        level: 3,
-      },
+        name: 'SQL',
+        level: 8,
+      }
     ],
   },
   {
     name: 'Technologies',
     skills: [
       {
-        name: '.NET',
+        name: 'ASP.NET Core',
         level: 9,
       },
       {
+        name: 'Entity Framework',
+        level: 9,
+      },
+      {
+        name: 'REST',
+        level: 8,
+      },
+      {
+        name: 'GraphQL',
+        level: 8,
+      },
+      {
         name: 'React',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Nodejs',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Nextjs',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Docker',
         level: 6,
       },
       {
-        name: 'Docker',
-        level: 8,
+        name: 'BigQuery',
+        level: 6,
       },
       {
         name: 'MS SQL Server',
-        level: 8,
-      },
-      {
-        name: 'BigQuery',
-        level: 8,
+        level: 5,
       },
     ],
   },
@@ -210,16 +216,16 @@ export const skills: SkillGroup[] = [
     name: 'Cloud/DevOps',
     skills: [
       {
-        name: 'GCP',
+        name: 'Terraform',
+        level: 9,
+      },
+      {
+        name: 'GCP (Functions, Storage, Build (CI/CD), IAM, BigQuery, Scheduler, Pub/Sub)',
         level: 8,
       },
       {
-        name: 'AWS',
+        name: 'AWS (Amplify, DynamoDB, GraphQL, S3, SES, SNS)',
         level: 5,
-      },
-      {
-        name: 'Terraform',
-        level: 4,
       },
     ],
   },
@@ -227,29 +233,24 @@ export const skills: SkillGroup[] = [
     name: 'Tools',
     skills: [
       {
-
         name: 'Visual Studio Code',
-        level: 8,
-      },
-      {
-        name: 'Git/Github',
-        level: 6,
-      },
-      {
-        name: 'Bitbucket',
-        level: 10,
-      },
-      {
-        name: 'JIRA',
-        level: 10,
-      },
-      {
-        name: 'Confluence',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Postman',
-        level: 10,
+        level: 9,
+      },
+      {
+        name: 'Git, Github, Bitbucket',
+        level: 8,
+      },
+      {
+        name: 'Cypress',
+        level: 7,
+      },
+      {
+        name: 'JIRA & Confluence',
+        level: 9,
       },
     ],
   },
@@ -388,9 +389,42 @@ export const experience: TimelineItem[] = [
 
 export const projects: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    title: 'eNVD Livestock Consignments System',
+    location: 'Meat and Livestock Australia',
+    date: '2023',
+    content: (
+      <div className="flex flex-col gap-y-2">        <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+        <p className="flex gap-x-1">
+          Website (login required):
+          <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://envd.integritysystems.com.au/">
+            envd.integritysystems.com.au
+            <div className="flex justify-center items-center">
+              <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+              </svg>
+            </div>
+          </a>
+        </p>
+        <p className="flex gap-x-1">
+          Mobile app:
+          <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://www.integritysystems.com.au/on-farm-assurance/national-vendor-declaration-nvd/envd-app/">
+            The eNVD Livestock Consignments App
+            <div className="flex justify-center items-center">
+              <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+              </svg>
+            </div>
+          </a>
+        </p>
+      </div>
+    ),
+  }, {
+    title: 'BOSCAR Data Platform',
+    location: 'NSW Department of Communities and Justice',
+    date: '2023',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -399,16 +433,70 @@ export const projects: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    title: 'Normanhu.com (this website)',
+    location: 'A personal website project',
+    date: '2023',
     content: (
-      <>
+      <div className="flex flex-col gap-y-2">
         <p>
           Describe work, special projects, notable achievements, what technologies you have been working with, and
           anything else that would be useful for an employer to know.
         </p>
-      </>
+        <p className="flex gap-x-1">
+          <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://github.com/hnorm/norman-app">
+            Github repo
+            <div className="flex justify-center items-center">
+              <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+              </svg>
+            </div>
+          </a>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: 'Netezza Data Platform Migration Project',
+    location: 'Australian Stock Exchange',
+    date: '2022',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  }, 
+  {
+    title: 'Central Station Pedestrian Modelling Assessment',
+    location: 'Transport for NSW',
+    date: '2021',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    title: 'Operational Performance Toolkit',
+    location: 'Transport for NSW',
+    date: '2019-2020',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  }, 
+  {
+    title: 'Traffic Flow Detection from RMS Live Traffic Cameras',
+    location: 'UNSW Undergraduate Honours Thesis',
+    date: '2016',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
     ),
   },
 ];
