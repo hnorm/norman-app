@@ -1,7 +1,7 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
+  // BuildingOffice2Icon,
   EnvelopeIcon,
   // CalendarIcon,
   FlagIcon,
@@ -19,17 +19,17 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import awsCloudPractitionerCert from '../images/aws-certified-cloud-practitioner.png';
 import terraformCert from '../images/hashicorp-certified-terraform-associate-003.png';
 import heroImage from '../images/header-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 // import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -82,13 +82,13 @@ export const heroData: Hero = {
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         <strong className='text-stone-100'></strong>
-        A .NET Software Developer
-        with experience in building websites, databases, backend & cloud infrastructure.
-        I am looking for new job based in London from 2024.
+        A .NET Software Developer with experience in building websites, data platforms, backends
+        & cloud infrastructure, I am looking for new job in London from 2024.
+
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         An experienced consultant of over 6 years, I have an all-round knowledge which includes
-        coding, testing, cloud, business analysis, project management, user stories and documentation.
+        coding, testing, cloud, devops, and project management.
       </p>
       {/* <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         I'm a Victoria based <strong className='text-stone-100'>Full Stack Software Engineer</strong>, currently working
@@ -123,14 +123,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   // profileImageSrc: profilepic,
-  description: `Currently residing in Sydney, I will be relocating to London in January next year for a new adventure. `,
+  description: `A natural problem solver and thinker, I feel at home when inside an IDE. Been in Sydney my whole life, moving to London to look for a new adventure.`,
   aboutItems: [
-    { label: 'Relocating to', text: 'London, UK', Icon: MapIcon },
+    { label: 'Location (now)', text: 'Sydney, AUS', Icon: MapIcon },
     { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
+    { label: 'Location (from 2024)', text: 'London, UK', Icon: MapIcon },
+
     // { label: 'Age', text: '30', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Australian', Icon: FlagIcon },
     { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
+    // { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -264,67 +266,67 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage1,
+    image: portfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage2,
+    image: portfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: portfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage4,
+    image: portfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage5,
+    image: portfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage6,
+    image: portfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage7,
+    image: portfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage8,
+    image: portfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage9,
+    image: portfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage10,
+    image: portfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage11,
+    image: portfolioImage11,
   },
 ];
 
@@ -350,38 +352,53 @@ export const experience: TimelineItem[] = [
   {
     date: '2022 - Present',
     title: 'Cognizant Servian',
-    location: 'Senior Consultant',
+    location: 'Consultant',
     content: (
-      <ul className="md:list-disc md:list-outside md:ml-4">
-        <li>Extended an existing <b>GraphQL</b> API written in <b>C#</b> and <b>MS SQL Server.</b></li>
-        <li>Collaborated with multiple stakeholders to form business requirements, creating user stories & acceptance criteria to add new features.</li>
-        <li>Developed <b>Python</b> functions hosted on <b>GCP</b> to ingest webhooks, transform data, create backups and monitor systems.</li>
-        <li>Designed cloud infrastructure solutions covering security, reliability, durability, cost, support and other business requirements.</li>
-        <li>Created <b>Terraform</b> code and deployed infrastructure on GCP for data platforms and websites.</li>
-        <li>Designed test cases and conducted testing in managed in <b>qtest</b>. </li>
-        <li>Wrote technical docs, user guides, knowledge base articles.</li>
-      </ul>
+      <p>
+        Being software & cloud consultant at a tech consultancy was an excellent opportunity to further my software development skills,
+        with more cloud-native software development and enterprise solutions.
+        <ul className="my-2 md:list-disc md:list-outside md:ml-4">
+          <li>Developed <b>REST</b> and <b>graphQL</b> APIs with <b>ASP.NET Core</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>.</li>
+          <li>Acted as a product owner, liaising with multiple stakeholders to form business requirements, creating user stories & acceptance criteria, and running backlog grooming & prioritisation sessions.</li>
+          <li>Designed cloud infrastructure solutions covering security, reliability, durability, cost, support and other functional & non-functional requirements.</li>
+          <li>Developed <b>Python</b> functions hosted on <b>GCP</b> to ingest webhooks, transform data, create backups and monitor systems.</li>
+          <li>Wrote and deployed <b>Terraform</b> code onto Google Cloud Platform.</li>
+          <li>Developed and troubleshooted <b>Docker</b> images operating within a microservices framework.</li>
+          <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing, managed with <b>qtest</b>.</li>
+          <li>Wrote technical docs, user guides, knowledge base articles.</li>
+        </ul>
+      </p>
     ),
   },
   {
     date: '2021 - 2022',
     title: 'Arcadis',
-    location: 'Transport Planner',
+    location: 'Senior Transport Planner',
     content: (
-      <ul className="md:list-disc md:list-outside md:ml-4">
-        <li>Wrote transport planning assessments, government strategy reports, and proposals to shape our urban environment.</li>
-      </ul>
+      <p>
+        Moving to a larger engineering consultancy exposed me to a wider range of projects, engineers and clients.
+        <ul className="my-2 md:list-disc md:list-outside md:ml-4">
+          <li>Traffic and pedestrian modelling, including Legion micro-simulation modelling of Sydney's Central Station.</li>
+          <li>Transport data analytics to gain insights and inform transport planning assessments.</li>
+          <li>Wrote transport planning assessments, government strategy reports, and proposals to shape our urban environment.</li>
+        </ul>
+      </p>
     ),
   },
   {
     date: '2017 - 2020',
     title: 'Beca',
-    location: 'Graduate Transport Planner',
+    location: 'Transport Planner',
     content: (
-      <ul className="md:list-disc md:list-outside md:ml-4">
-        <li>Built a <b>C#</b> application using <b>WinForms</b> and <b>MS SQL Server</b> to automate data analytics</li>
-        <li>Used <b>VBA</b> in Excel for data analytics and creating visualisations of traffic data, Opal data and other transport datasets.</li>
-      </ul>
+      <p>
+        Starting in the two-year graduate program, I was a Transport Planning consultant primarily working on the data analytics,
+        transport modeling and strategic assessments.
+        <ul className="my-2 md:list-disc md:list-outside md:ml-4">
+          <li>Building a <b>C#</b> application using <b>WinForms</b> and <b>MS SQL Server</b> to automate data analytics.</li>
+          <li>Using <b>VBA</b> in Excel for data analytics and creating visualisations of traffic data, Opal data and other transport datasets.</li>
+          <li>Local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
+        </ul>
+      </p>
     ),
   },
 ];
@@ -393,10 +410,17 @@ export const projects: TimelineItem[] = [
     location: 'Meat and Livestock Australia',
     date: '2023',
     content: (
-      <div className="flex flex-col gap-y-2">        <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div className="flex flex-col gap-y-2">
+        <p>
+          eNVD is Australia's digital red meat integrity system, providing assurance and livestock traceability
+          for the Australian red meat industry, ensuring the product is clean, safe and natural.
+        </p>
+        <p>
+          I developed <b>REST</b> and <b>graphQL</b> APIs with <b>ASP.NET Core</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>,
+          designed following <b>MVVM</b> architecture, with testing using <b>NUnit</b> and <b>Moq</b> frameworks.
+
+          I was also the product owner on this project, primarily responsible for writing user stories, acceptance criteria and refining UI/UX designs.
+        </p>
         <p className="flex gap-x-1">
           Website (login required):
           <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://envd.integritysystems.com.au/">
@@ -426,10 +450,16 @@ export const projects: TimelineItem[] = [
     location: 'NSW Department of Communities and Justice',
     date: '2023',
     content: (
+      <div className="flex flex-col gap-y-2">
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        BOSCAR required a new data platform to migrate their traditional SAS data warehouse and data pipelines to a modern cloud-based solution.
+        </p>
+        <p>
+        I designed a <b>Google Cloud Platform</b> solution, writing <b>Terraform</b> code and deploying infrastructure that handled multiple working environments, 
+        data ingestion pipelines, a BigQuery data warehouse, webhooks, IAM & groups, logging & monitoring, and integrations with dbt Cloud and Bitbucket. 
+        Webhooks where handled using <b>Cloud Functions</b> in <b>Python</b> and the data ingestion pipeline using <b>Cloud Build</b>.
       </p>
+      </div>
     ),
   },
   {
@@ -439,8 +469,12 @@ export const projects: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-y-2">
         <p>
-          Describe work, special projects, notable achievements, what technologies you have been working with, and
-          anything else that would be useful for an employer to know.
+          I developed this website based on the
+          <a className="inline-flex mx-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://reactresume.com">
+            React Resume
+          </a>
+          open-source template, built using <b>React Javascript</b> with <b>NextJS</b> and <b>Tailwind CSS</b>.
+          Hosted on <b>AWS Amplify</b>, with a graphQL backend to AWS SES for the 'Contact Me' form, assets hosted on S3, and domain name from CloudFront.
         </p>
         <p className="flex gap-x-1">
           <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://github.com/hnorm/norman-app">
@@ -461,42 +495,55 @@ export const projects: TimelineItem[] = [
     date: '2022',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  }, 
-  {
-    title: 'Central Station Pedestrian Modelling Assessment',
-    location: 'Transport for NSW',
-    date: '2021',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        A data migration project from Netezza onto <b>BigQuery</b>, I designed the <b>Google Cloud Platform</b> solution that included a BigQuery data warehouse,
+        scheduled <b>Cloud Functions</b> to perform regular table snapshot backups, managing IAM roles and groups, Cloud KMS keys,
+        and integrations with SAP Data Services and Xmatters. Wrote <b>Terraform</b> to deploy infrastructure as code across multiple environments.
       </p>
     ),
   },
+  // {
+  //   title: 'Central Station Pedestrian Modelling Assessment',
+  //   location: 'Transport for NSW',
+  //   date: '2021',
+  //   content: (
+  //     <p>
+
+  //     </p>
+  //   ),
+  // },
   {
     title: 'Operational Performance Toolkit',
     location: 'Transport for NSW',
     date: '2019-2020',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        The railway analytics team required customised data transformations and visualisations to support their program of works.
+        I developed a <b>C#</b> WinForms application with <b>.NET Entity Framework</b> and <b>MS SQL Server</b>, with data transformations
+        performed using <b>LINQ</b> and <b>SQL</b>, and results output onto Excel tables and graphs using Excel Interop.
       </p>
     ),
-  }, 
+  },
   {
     title: 'Traffic Flow Detection from RMS Live Traffic Cameras',
     location: 'UNSW Undergraduate Honours Thesis',
     date: '2016',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div className="flex flex-col gap-y-2">
+        <p>
+          My civil engineering honours thesis investigated the use of <b>OpenCV</b> in <b>Python</b> to detect traffic flow from
+          RMS live traffic cameras, with images web scraped from live feeds using Python scripts.
+        </p>
+        <p className="flex gap-x-1">
+          <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://normanapp-assets.s3.eu-west-1.amazonaws.com/Norman+Hu+Thesis+B.pdf">
+            PDF
+            <div className="flex justify-center items-center">
+              <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+              </svg>
+            </div>
+          </a>
+        </p>
+      </div>
     ),
   },
 ];
@@ -565,23 +612,23 @@ export const certification: CertificationSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Contact me for any questions and feel free to share my Resume.',
+  description: 'Contact me for any questions, and feel free to share my Resume.',
   items: [
     {
       type: ContactType.Email,
       text: 'normanhujun@gmail.com',
       href: 'mailto:normanhujun@gmail.com',
     },
-    // {
-    //   type: ContactType.Phone,
-    //   text: '+xx xxx xxx xxx',
-    //   href: 'tel:+',
-    // },
     {
       type: ContactType.LinkedIn,
       text: 'linkedin.com/in/hnorm/',
       href: 'https://www.linkedin.com/in/hnorm/',
     },
+    // {
+    //   type: ContactType.Phone,
+    //   text: '+xx xxx xxx xxx',
+    //   href: 'tel:+',
+    // },
     // {
     //   type: ContactType.Github,
     //   text: 'github.com/hnorm',
@@ -595,11 +642,11 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
 
-  { label: 'Email', Icon: EnvelopeIcon, href: 'mailto:normanhujun@gmail.com' },
+  { label: 'Email', Icon: EnvelopeIcon, action: 'copy', ref: 'normanhujun@gmail.com' },
   // { label: 'Phone', Icon: PhoneIcon, href: 'tel:+xxxxxxxxxxx' },
   // { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'Github', Icon: GithubIcon, href: 'https://www.github.com/hnorm' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/hnorm/' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, action: 'link', ref: 'https://www.linkedin.com/in/hnorm/' },
+  { label: 'Github', Icon: GithubIcon, action: 'link',  ref: 'https://www.github.com/hnorm' },
   // { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
   // { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];

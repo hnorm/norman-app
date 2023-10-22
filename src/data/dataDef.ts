@@ -162,5 +162,6 @@ export interface ContactValue {
 export interface Social {
   label: string;
   Icon: FC<IconProps>;
-  href: string;
+  ref: string;
+  action: string;
 }
