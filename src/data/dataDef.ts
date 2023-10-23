@@ -133,8 +133,8 @@ export interface ContactSection {
 }
 
 export const ContactType = {
-  Email: 'Email',
-  Phone: 'Phone',
+  Email: 'Email address',
+  Phone: 'Phone number',
   Location: 'Location',
   Github: 'Github',
   LinkedIn: 'LinkedIn',
@@ -147,8 +147,10 @@ export type ContactType = (typeof ContactType)[keyof typeof ContactType];
 
 export interface ContactItem {
   type: ContactType;
+  action: ActionType;
+
   text: string;
-  href?: string;
+  ref?: string;
 }
 
 export interface ContactValue {
@@ -161,7 +163,14 @@ export interface ContactValue {
  */
 export interface Social {
   label: string;
+  action: ActionType;
   Icon: FC<IconProps>;
   ref: string;
-  action: string;
 }
+
+export const ActionType = {
+  CopyToClipboard: 'copy',
+  Link: 'link',
+} as const;
+
+export type ActionType = (typeof ActionType)[keyof typeof ActionType];

@@ -1,9 +1,10 @@
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import classNames from 'classnames';
-import { FC, memo } from 'react';
+import { FC, memo, useCallback, useReducer, useState } from 'react';
 
 import { contact, heroData, SectionId } from '../../../data/data';
-import { ContactType, ContactValue } from '../../../data/dataDef';
+import { ActionType, ContactType, ContactValue } from '../../../data/dataDef';
+import CopyToClipboard, { CopyToClipboardProps } from '../../CopyToClipboard';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
@@ -27,8 +28,22 @@ const Contact: FC = memo(() => {
   const { headerText, description, items } = contact;
   const { href, target, text, primary, Icon } = heroData.actions[0]
 
+  const [title, setTitle] = useState("");
+  const [textToCopy, serTextToCopy] = useState("");
+  const [pos, setPos] = useState(0);
+  const [key, forceUpdate] = useReducer(x => x + 1, 0);
+  
+  const onCopy = useCallback((props: CopyToClipboardProps) => {
+    console.log(props);
+    setTitle(props.title);
+    serTextToCopy(props.textToCopy);
+    setPos(props.pos);
+    forceUpdate();
+  }, []);
+  
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Contact}>
+      <CopyToClipboard title={title} textToCopy={textToCopy} pos={pos} key={key}/>
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <EnvelopeIcon className="hidden h-16 w-16 text-white md:block" />
@@ -41,7 +56,7 @@ const Contact: FC = memo(() => {
           <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2">
             <p className="prose leading-6 text-neutral-300">{description}</p>
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
-              {items.map(({ type, text, href }) => {
+              {items.map(({ type, text, action, ref }) => {
                 const { Icon, srLabel } = ContactValueMap[type];
                 return (
                   <div key={srLabel}>
@@ -52,8 +67,10 @@ const Contact: FC = memo(() => {
                           '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-yellow focus:outline-none focus:ring-2 focus:ring-yellow',
                           { 'hover:text-white': href },
                         )}
-                        href={href}
-                        target={href?.startsWith("http") ? "_blank" : ""}
+                        href={action == ActionType.Link ? ref : undefined}
+                        target={action == ActionType.Link ? "_blank" : ""}
+                        id={ref}
+                        onClick={action == ActionType.CopyToClipboard? e => onCopy({ title: `${type} copied`, textToCopy: ref ?? "", pos: e.clientY }) : () => { }}
                       >
                         <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
                         <span className="ml-3 text-sm sm:text-base">{text}</span>

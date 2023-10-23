@@ -34,6 +34,7 @@ import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
+  ActionType,
   CertificationSection,
   ContactSection,
   ContactType,
@@ -125,13 +126,12 @@ export const aboutData: About = {
   // profileImageSrc: profilepic,
   description: `A natural problem solver and thinker, I feel at home when inside an IDE. Been in Sydney my whole life, moving to London to look for a new adventure.`,
   aboutItems: [
-    { label: 'Location (now)', text: 'Sydney, AUS', Icon: MapIcon },
-    { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
+    { label: 'Location (current)', text: 'Sydney, AUS', Icon: MapIcon },
     { label: 'Location (from 2024)', text: 'London, UK', Icon: MapIcon },
-
+    { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
+    { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
     // { label: 'Age', text: '30', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Australian', Icon: FlagIcon },
-    { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
     // { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
   ],
 };
@@ -616,13 +616,15 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
+      action: ActionType.CopyToClipboard,
       text: 'normanhujun@gmail.com',
-      href: 'mailto:normanhujun@gmail.com',
+      ref: 'normanhujun@gmail.com',
     },
     {
       type: ContactType.LinkedIn,
+      action: ActionType.Link,
       text: 'linkedin.com/in/hnorm/',
-      href: 'https://www.linkedin.com/in/hnorm/',
+      ref: 'https://www.linkedin.com/in/hnorm/',
     },
     // {
     //   type: ContactType.Phone,
@@ -642,11 +644,11 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
 
-  { label: 'Email', Icon: EnvelopeIcon, action: 'copy', ref: 'normanhujun@gmail.com' },
+  { label: 'Email address', Icon: EnvelopeIcon, action: ActionType.CopyToClipboard, ref: 'normanhujun@gmail.com' },
   // { label: 'Phone', Icon: PhoneIcon, href: 'tel:+xxxxxxxxxxx' },
   // { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, action: 'link', ref: 'https://www.linkedin.com/in/hnorm/' },
-  { label: 'Github', Icon: GithubIcon, action: 'link',  ref: 'https://www.github.com/hnorm' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, action: ActionType.Link, ref: 'https://www.linkedin.com/in/hnorm/' },
+  { label: 'Github', Icon: GithubIcon, action: ActionType.Link,  ref: 'https://www.github.com/hnorm' },
   // { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
   // { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
