@@ -34,7 +34,6 @@ const Contact: FC = memo(() => {
   const [key, forceUpdate] = useReducer(x => x + 1, 0);
   
   const onCopy = useCallback((props: CopyToClipboardProps) => {
-    console.log(props);
     setTitle(props.title);
     serTextToCopy(props.textToCopy);
     setPos(props.pos);
