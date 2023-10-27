@@ -1,9 +1,22 @@
 export type AmplifyDependentResourcesAttributes = {
+  "analytics": {
+    "normanapp": {
+      "Id": "string",
+      "Region": "string",
+      "appName": "string"
+    }
+  },
   "api": {
     "normanapp": {
       "GraphQLAPIEndpointOutput": "string",
       "GraphQLAPIIdOutput": "string",
       "GraphQLAPIKeyOutput": "string"
+    }
+  },
+  "auth": {
+    "normanapp": {
+      "IdentityPoolId": "string",
+      "IdentityPoolName": "string"
     }
   },
   "function": {

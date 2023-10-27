@@ -28,6 +28,9 @@
       },
       "api": {
         "normanapp": {}
+      },
+      "auth": {
+        "normanapp": {}
       }
     }
   }

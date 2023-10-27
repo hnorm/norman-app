@@ -1,0 +1,21 @@
+{
+    "appName": "normanapp",
+    "roleName": "pinpointLambdaRolefb603acd",
+    "cloudformationPolicyName": "cloudformationPolicyfb603acd",
+    "cloudWatchPolicyName": "cloudWatchPolicyfb603acd",
+    "pinpointPolicyName": "pinpointPolicyfb603acd",
+    "authPolicyName": "pinpoint_amplify_fb603acd",
+    "unauthPolicyName": "pinpoint_amplify_fb603acd",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "normanapp_identitypool_de44c7ca",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "normanapp",
+    "sharedId": "de44c7ca",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}
