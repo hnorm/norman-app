@@ -88,7 +88,7 @@ export const heroData: Hero = {
 
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        An experienced consultant of over 6 year in Sydney, my breadth of knowledge in coding, testing, cloud, devops,
+        An experienced consultant of over 6 years in Sydney, my breadth of knowledge in coding, testing, cloud, devops,
         and project management has contributed to the seamless delivery of high-quality solutions on multiple projects.
         My work has been involved in the delivery of websites, data platforms, backends & cloud infrastructure.
       </p>
