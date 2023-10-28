@@ -10,6 +10,7 @@ import {
   SparklesIcon,
   // MapPinIcon
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -83,29 +84,19 @@ export const heroData: Hero = {
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         <strong className='text-stone-100'></strong>
-        A .NET Software Developer with experience in building websites, data platforms, backends
-        & cloud infrastructure, I am looking for new job in London from 2024.
+        A .NET Software Developer looking for a full-time job in London from 2024.
 
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        An experienced consultant of over 6 years, I have an all-round knowledge which includes
-        coding, testing, cloud, devops, and project management.
+        An experienced consultant of over 6 year in Sydney, my breadth of knowledge in coding, testing, cloud, devops,
+        and project management has contributed to the seamless delivery of high-quality solutions on multiple projects.
+        My work has been involved in the delivery of websites, data platforms, backends & cloud infrastructure.
       </p>
-      {/* <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        I'm a Victoria based <strong className='text-stone-100'>Full Stack Software Engineer</strong>, currently working
-        at <strong className='text-stone-100'>Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        In my free time time, you can catch me training in <strong className='text-stone-100'>Muay Thai</strong>,
-        plucking my <strong className='text-stone-100'>banjo</strong>, or exploring beautiful{' '}
-        <strong className='text-stone-100'>Vancouver Island</strong>.
-      </p> */}
     </>
   ),
   actions: [
     {
-      href: 'https://normanapp-assets.s3.eu-west-1.amazonaws.com/Norman-Hu-resume.pdf',
+      href: 'https://normanapp-assets.s3.eu-west-1.amazonaws.com/Norman_Hu_Resume.pdf',
       target: '_blank',
       text: 'Resume',
       primary: true,
@@ -243,7 +234,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Git, Github, Bitbucket',
+        name: 'Git, GitHub, Bitbucket',
         level: 8,
       },
       {
@@ -350,7 +341,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: '2022 - Present',
+    date: 'Mar 2022 - Present',
     title: 'Cognizant Servian',
     location: 'Consultant',
     content: (
@@ -358,20 +349,20 @@ export const experience: TimelineItem[] = [
         Being software & cloud consultant at a tech consultancy was an excellent opportunity to further my software development skills,
         with more cloud-native software development and enterprise solutions.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Developed <b>REST</b> and <b>graphQL</b> APIs with <b>ASP.NET Core</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>.</li>
-          <li>Acted as a product owner, liaising with multiple stakeholders to form business requirements, creating user stories & acceptance criteria, and running backlog grooming & prioritisation sessions.</li>
-          <li>Designed cloud infrastructure solutions covering security, reliability, durability, cost, support and other functional & non-functional requirements.</li>
-          <li>Developed <b>Python</b> functions hosted on <b>GCP</b> to ingest webhooks, transform data, create backups and monitor systems.</li>
-          <li>Wrote and deployed <b>Terraform</b> code onto Google Cloud Platform.</li>
-          <li>Developed and troubleshooted <b>Docker</b> images operating within a microservices framework.</li>
+          <li>Developed <b>REST</b> and <b>GraphQL</b> APIs with <b>ASP.NET Core</b> in <b>C#</b>, <b>Entity Framework</b> and <b>MS SQL Server</b> for a website & mobile app backend, improving functionality and driving digital adoption for the client.</li>
+          <li>Liaised with stakeholders to form business requirements, manage conflicts, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
+          <li>Designed <b>cloud infrastructure</b> solutions, taking into consideration security, reliability, durability, cost, support and other functional & non-functional requirements.</li>
+          <li>Set up <b>Python</b> event-driven functions, deployed onto <b>Google Cloud Platform</b> Cloud Functions to ingest webhooks, transform data, create backups and monitor systems.</li>
+          <li>Translated cloud solutions into <b>Terraform</b> code to deploy GCP infrastructure, providing a strong foundation and quick response to any infrastructure change requests.</li>
+          <li>Troubleshooted <b>Docker</b> images operating within a microservices framework.</li>
           <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing, managed with <b>qtest</b>.</li>
-          <li>Wrote technical docs, user guides, knowledge base articles.</li>
+          <li>Wrote technical docs, user guides, and knowledge base articles that are easy to find, read and understand.</li>
         </ul>
       </p>
     ),
   },
   {
-    date: '2021 - 2022',
+    date: 'Jan 2021 - Mar 2022',
     title: 'Arcadis',
     location: 'Senior Transport Planner',
     content: (
@@ -386,7 +377,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '2017 - 2020',
+    date: 'May 2017 - Dec 2020',
     title: 'Beca',
     location: 'Transport Planner',
     content: (
@@ -394,9 +385,9 @@ export const experience: TimelineItem[] = [
         Starting in the two-year graduate program, I was a Transport Planning consultant primarily working on the data analytics,
         transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Building a <b>C#</b> application using <b>WinForms</b> and <b>MS SQL Server</b> to automate data analytics.</li>
-          <li>Using <b>VBA</b> in Excel for data analytics and creating visualisations of traffic data, Opal data and other transport datasets.</li>
-          <li>Local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
+          <li>Developed a <b>C#</b> application using WinForms and <b>MS SQL Server</b> to automate data analytics.</li>
+          <li>Used <b>VBA</b> in Excel for data analytics & visualisations of traffic data, Opal data and other transport datasets.</li>
+          <li>Conducted local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
         </ul>
       </p>
     ),
@@ -413,13 +404,18 @@ export const projects: TimelineItem[] = [
       <div className="flex flex-col gap-y-2">
         <p>
           eNVD is Australia's digital red meat integrity system, providing assurance and livestock traceability
-          for the Australian red meat industry, ensuring the product is clean, safe and natural.
+          for the Australian red meat industry, ensuring the product is clean, safe and natural. The digital system 
+          would replace existing paper-based systems, reducing costs whilst improving access, traceability and integration
+          with other systems.
         </p>
         <p>
-          I developed <b>REST</b> and <b>graphQL</b> APIs with <b>ASP.NET Core</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>,
-          designed following <b>MVVM</b> architecture, with testing using <b>NUnit</b> and <b>Moq</b> frameworks.
-
-          I was also the product owner on this project, primarily responsible for writing user stories, acceptance criteria and refining UI/UX designs.
+          I developed APIs used by the eNVD website, mobile app, and offered as a third-party API, employing both <b>REST</b> and <b>GraphQL</b>.
+          The tech stack uses <b>ASP.NET Core</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>, <b>MVVM</b> and <b>microservices</b> architectures,
+          with testing using <b>NUnit</b> and <b>Moq</b> frameworks.
+        </p>
+        <p>
+          As product owner, I was also primarily responsible for liaising with stakeholders to analyse business requirements,
+          translating them into user stories, acceptance criteria and UI/UX designs.
         </p>
         <p className="flex gap-x-1">
           Website (login required):
@@ -451,14 +447,14 @@ export const projects: TimelineItem[] = [
     date: '2023',
     content: (
       <div className="flex flex-col gap-y-2">
-      <p>
-        BOSCAR required a new data platform to migrate their traditional SAS data warehouse and data pipelines to a modern cloud-based solution.
+        <p>
+          BOSCAR wanted a new data platform to migrate its traditional SAS data warehouse and data pipelines to a modern cloud-based solution.
         </p>
         <p>
-        I designed a <b>Google Cloud Platform</b> solution, writing <b>Terraform</b> code and deploying infrastructure that handled multiple working environments, 
-        data ingestion pipelines, a BigQuery data warehouse, webhooks, IAM & groups, logging & monitoring, and integrations with dbt Cloud and Bitbucket. 
-        Webhooks where handled using <b>Cloud Functions</b> in <b>Python</b> and the data ingestion pipeline using <b>Cloud Build</b>.
-      </p>
+          I designed a <b>Google Cloud Platform</b> solution, writing <b>Terraform</b> code and deploying infrastructure that handled multiple working environments,
+          data ingestion pipelines, BigQuery, webhooks, IAM roles & groups, logging & monitoring, and integrations with dbt Cloud and Bitbucket.
+          Webhooks where handled using <b>Cloud Functions</b> in <b>Python</b> and the data ingestion pipeline using <b>Cloud Build</b>.
+        </p>
       </div>
     ),
   },
@@ -469,16 +465,20 @@ export const projects: TimelineItem[] = [
     content: (
       <div className="flex flex-col gap-y-2">
         <p>
-          I developed this website based on the
+          This website was built using React in Typescript with NextJS and Tailwind CSS. Based on the
           <a className="inline-flex mx-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://reactresume.com">
             React Resume
           </a>
-          open-source template, built using <b>React Javascript</b> with <b>NextJS</b> and <b>Tailwind CSS</b>.
-          Hosted on <b>AWS Amplify</b>, with a graphQL backend to AWS SES for the 'Contact Me' form, assets hosted on S3, and domain name from CloudFront.
+          open-source template, it is on <b>AWS Amplify</b>, 
+          <Link className="inline-flex mx-1 font-medium text-blue-600 underline dark:text-blue-500 no-underline" href="/#contact">
+            'Get in touch'
+          </Link> 
+          form submissions forwarded to my email inbox 
+          via a GraphQL backend and <b>AWS SES</b>, downloadable assets hosted on <b>S3 buckets</b>, and domain name from CloudFront. 
         </p>
         <p className="flex gap-x-1">
           <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://github.com/hnorm/norman-app">
-            Github repo
+            GitHub repo
             <div className="flex justify-center items-center">
               <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                 <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
@@ -501,26 +501,21 @@ export const projects: TimelineItem[] = [
       </p>
     ),
   },
-  // {
-  //   title: 'Central Station Pedestrian Modelling Assessment',
-  //   location: 'Transport for NSW',
-  //   date: '2021',
-  //   content: (
-  //     <p>
-
-  //     </p>
-  //   ),
-  // },
   {
     title: 'Operational Performance Toolkit',
     location: 'Transport for NSW',
     date: '2019-2020',
     content: (
-      <p>
-        The railway analytics team required customised data transformations and visualisations to support their program of works.
-        I developed a <b>C#</b> WinForms application with <b>.NET Entity Framework</b> and <b>MS SQL Server</b>, with data transformations
-        performed using <b>LINQ</b> and <b>SQL</b>, and results output onto Excel tables and graphs using Excel Interop.
-      </p>
+      <div className="flex flex-col gap-y-2">
+        <p>
+          The TfNSW railway analytics team required customised data transformations and visualisations to support their program of works.
+          I developed a <b>C#</b> WinForms application with <b>.NET Entity Framework</b> and <b>MS SQL Server</b>, with data transformations
+          performed using <b>LINQ</b> and <b>SQL</b>, and results output onto Excel tables and graphs created using Excel Interop.
+        </p>
+        <p>
+          This resulted in a 90% reduction in effort required to produce analytics, allowing Transport for NSW to greatly expand its analytical coverage and operational insights on the Sydney railway network.
+        </p>
+      </div>
     ),
   },
   {
@@ -535,7 +530,7 @@ export const projects: TimelineItem[] = [
         </p>
         <p className="flex gap-x-1">
           <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://normanapp-assets.s3.eu-west-1.amazonaws.com/Norman+Hu+Thesis+B.pdf">
-            PDF
+            Download PDF
             <div className="flex justify-center items-center">
               <svg className="w-3 h-3 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                 <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
@@ -612,7 +607,7 @@ export const certification: CertificationSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Contact me for any questions, and feel free to share my Resume.',
+  description: 'Contact me using this form, email or LinkedIn message for any inquiries, and feel free to share my resume.',
   items: [
     {
       type: ContactType.Email,
@@ -648,7 +643,7 @@ export const socialLinks: Social[] = [
   // { label: 'Phone', Icon: PhoneIcon, href: 'tel:+xxxxxxxxxxx' },
   // { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
   { label: 'LinkedIn', Icon: LinkedInIcon, action: ActionType.Link, ref: 'https://www.linkedin.com/in/hnorm/' },
-  { label: 'Github', Icon: GithubIcon, action: ActionType.Link,  ref: 'https://www.github.com/hnorm' },
+  { label: 'GitHub', Icon: GithubIcon, action: ActionType.Link, ref: 'https://www.github.com/hnorm' },
   // { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
   // { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];

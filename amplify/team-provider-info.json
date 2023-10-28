@@ -31,6 +31,9 @@
       },
       "auth": {
         "normanapp": {}
+      },
+      "analytics": {
+        "normanapp": {}
       }
     }
   }
