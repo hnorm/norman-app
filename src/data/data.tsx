@@ -118,7 +118,7 @@ export const aboutData: About = {
   description: `A natural problem solver and thinker, I feel at home when inside an IDE. Been in Sydney my whole life, moving to London to look for a new adventure.`,
   aboutItems: [
     { label: 'Location (current)', text: 'Sydney, AUS', Icon: MapIcon },
-    { label: 'Location (from 2024)', text: 'London, UK', Icon: MapIcon },
+    { label: 'Location (from 2024)', text: 'London, UK (with full working rights)', Icon: MapIcon },
     { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
     { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
     // { label: 'Age', text: '30', Icon: CalendarIcon },
