@@ -346,7 +346,7 @@ export const experience: TimelineItem[] = [
     location: 'Consultant',
     content: (
       <p>
-        Being software & cloud consultant at a tech consultancy was an excellent opportunity to further my software development skills,
+        Being a software & cloud consultant at a tech consultancy was an excellent opportunity to further my software development skills,
         with more cloud-native software development and enterprise solutions.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
           <li>Developed <b>REST</b> and <b>GraphQL</b> APIs with <b>ASP.NET Core</b> in <b>C#</b>, <b>Entity Framework</b> and <b>MS SQL Server</b> for a website & mobile app backend, improving functionality and driving digital adoption for the client.</li>
@@ -367,7 +367,8 @@ export const experience: TimelineItem[] = [
     location: 'Senior Transport Planner',
     content: (
       <p>
-        Moving to a larger engineering consultancy exposed me to a wider range of projects, engineers and clients.
+        Arcadis is a large engineering consultancy working on many projects including the Central Station Renewal Project, Inland Rail, 
+        Transport Access Programs and may local government's Traffic and Transport Strategies.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
           <li>Traffic and pedestrian modelling, including Legion micro-simulation modelling of Sydney's Central Station.</li>
           <li>Transport data analytics to gain insights and inform transport planning assessments.</li>
@@ -382,10 +383,10 @@ export const experience: TimelineItem[] = [
     location: 'Transport Planner',
     content: (
       <p>
-        Starting in the two-year graduate program, I was a Transport Planning consultant primarily working on the data analytics,
-        transport modelling and strategic assessments.
+        Starting in the two-year graduate program, I was a Transport Planning consultant primarily working on data analytics,
+        traffic & transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Developed a <b>C#</b> application using WinForms and <b>MS SQL Server</b> to automate data analytics.</li>
+          <li> .NET application development with <b>C#</b>, WinForms and <b>MS SQL Server</b> to automate data analytics (using Entity Framework, LINQ, and SQL).</li>
           <li>Used <b>VBA</b> in Excel for data analytics & visualisations of traffic data, Opal data and other transport datasets.</li>
           <li>Conducted local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
         </ul>
