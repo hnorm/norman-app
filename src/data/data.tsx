@@ -84,7 +84,7 @@ export const heroData: Hero = {
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         <strong className='text-stone-100'></strong>
-        A .NET Software Developer looking for a full-time job in London from 2024.
+        A .NET Software Developer looking for a role in London starting Jan 2024.
 
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
@@ -367,8 +367,8 @@ export const experience: TimelineItem[] = [
     location: 'Senior Transport Planner',
     content: (
       <p>
-        Arcadis is a large engineering consultancy working on many projects including the Central Station Renewal Project, Inland Rail, 
-        Transport Access Programs and may local government's Traffic and Transport Strategies.
+        Arcadis is a large engineering consultancy where I worked on the Central Station Renewal Project, Inland Rail, 
+        Transport Access Programs, and traffic & transport strategies, for Transport for NSW and local governments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
           <li>Traffic and pedestrian modelling, including Legion micro-simulation modelling of Sydney's Central Station.</li>
           <li>Transport data analytics to gain insights and inform transport planning assessments.</li>
