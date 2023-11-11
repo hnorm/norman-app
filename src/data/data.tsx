@@ -368,7 +368,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Arcadis is a large engineering consultancy where I worked on the Central Station Renewal Project, Inland Rail, 
-        Transport Access Programs, and traffic & transport strategies, for Transport for NSW and local governments.
+        Transport Access Programs, and traffic & transport strategies, working with Transport for NSW and local governments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
           <li>Traffic and pedestrian modelling, including Legion micro-simulation modelling of Sydney's Central Station.</li>
           <li>Transport data analytics to gain insights and inform transport planning assessments.</li>
