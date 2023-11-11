@@ -7,9 +7,6 @@ import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   const { profileImageSrc, description, aboutItems } = aboutData;
-
-  // init these tailwind CSS classes 
-  // sm:grid-rows-3 grid-rows-5 grid-rows-6 grid-rows-7
   const items = aboutItems.length;
   
   return (
@@ -27,7 +24,7 @@ const About: FC = memo(() => {
             <h2 className="text-2xl font-bold text-white">About me</h2>
             <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
           </div>
-          <ul className={`grid grid-flow-col gap-4 grid-rows-${items} sm:grid-rows-${Math.ceil(items / 2)}`}>
+          <ul className="grid grid-flow-col gap-4 grid-rows-5 md:grid-rows-3">
             {aboutItems.map(({ label, text, Icon }, idx) => (
               <li className="flex items-start gap-x-2" key={idx}>
                 {Icon && <Icon className="h-5 w-5 text-white" />}
