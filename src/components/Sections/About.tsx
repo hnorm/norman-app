@@ -7,7 +7,6 @@ import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   const { profileImageSrc, description, aboutItems } = aboutData;
-  const items = aboutItems.length;
   
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
