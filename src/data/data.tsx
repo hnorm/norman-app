@@ -383,8 +383,8 @@ export const experience: TimelineItem[] = [
     location: 'Transport Planner',
     content: (
       <p>
-        Starting in the two-year graduate program, I was a Transport Planning consultant primarily working on data analytics,
-        traffic & transport modelling and strategic assessments.
+        Starting in the two-year graduate program, I was a Transport Planning consultant working on 
+        software development, data analytics, traffic & transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
           <li> .NET application development with <b>C#</b>, WinForms and <b>MS SQL Server</b> to automate data analytics (using Entity Framework, LINQ, and SQL).</li>
           <li>Used <b>VBA</b> in Excel for data analytics & visualisations of traffic data, Opal data and other transport datasets.</li>
