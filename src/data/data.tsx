@@ -1,9 +1,9 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
+  CalendarIcon,
   // BuildingOffice2Icon,
   EnvelopeIcon,
-  // CalendarIcon,
   FlagIcon,
   MapIcon,
   // PhoneIcon,
@@ -85,13 +85,12 @@ export const heroData: Hero = {
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
         <strong className='text-stone-100'></strong>
-        A .NET Software Developer looking for a role in London starting Jan 2024.
-
+        I am a London-based software developer and consultant currently working at Cognizant Servian.
       </p>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        An experienced consultant of over 6 years in Sydney, my breadth of knowledge in coding, testing, cloud, devops,
-        and project management has contributed to the seamless delivery of high-quality solutions on multiple projects.
-        My work has been involved in the delivery of websites, data platforms, backends & cloud infrastructure.
+        Experienced in .NET framework, APIs, website & application development, and cloud infrastructure. 
+        Working as a consultant for over 6 years with many businesses and government clients, I have 
+        developed key project management and client-facing skills alongside my strong technical expertise.
       </p>
     </>
   ),
@@ -116,13 +115,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `A natural problem solver and thinker, I feel at home when inside an IDE. Been in Sydney my whole life, moving to London to look for a new adventure.`,
+  description: `A natural problem solver and thinker, I feel at home when inside an IDE.`,
   aboutItems: [
-    { label: 'Location (current)', text: 'Sydney, AUS', Icon: MapIcon },
-    { label: 'Location (from 2024)', text: 'London, UK', Icon: MapIcon },
+    { label: 'Location', text: 'London, UK', Icon: MapIcon },
     { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
     { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
-    // { label: 'Age', text: '30', Icon: CalendarIcon },
+    { label: 'Age', text: '30', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Australian', Icon: FlagIcon },
     // { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
   ],
