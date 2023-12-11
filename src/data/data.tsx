@@ -345,16 +345,16 @@ export const experience: TimelineItem[] = [
     location: 'Consultant',
     content: (
       <p>
-        Being a software & cloud consultant at a tech consultancy was an excellent opportunity to further my software development skills,
-        with more cloud-native software development and enterprise solutions.
+        As a software engineer and consultant I continued to develop my technical expertise with more cloud-native software development and enterprise solutions,
+        while further enhancing my project management and client-facing skills.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Developed <b>REST</b> and <b>GraphQL</b> APIs with <b>ASP.NET Core</b> in <b>C#</b>, <b>Entity Framework</b> and <b>MS SQL Server</b> for a website & mobile app backend, improving functionality and driving digital adoption for the client.</li>
-          <li>Liaised with stakeholders to form business requirements, manage conflicts, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
-          <li>Designed <b>cloud infrastructure</b> solutions, taking into consideration security, reliability, durability, cost, support and other functional & non-functional requirements.</li>
-          <li>Set up <b>Python</b> event-driven functions, deployed onto <b>Google Cloud Platform</b> Cloud Functions to ingest webhooks, transform data, create backups and monitor systems.</li>
-          <li>Translated cloud solutions into <b>Terraform</b> code to deploy GCP infrastructure, providing a strong foundation and quick response to any infrastructure change requests.</li>
+          <li>Extended a <b>REST</b> and <b>GraphQL</b> API with <b>ASP.NET Core</b> using <b>C#</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>, improving an existing public API and database to further drive digital adoption for an enterprise client.</li>
+          <li>Developed websites using <b>React</b> in <b>JavaScript</b>, using frameworks such as NextJS and Tailwind CSS to create high-quality user experiences.</li>
+          <li>Architected <b>cloud infrastructure</b> solutions for the Google Cloud Platform, wrote <b>Terraform</b> code and deployed it following Infrastructure as Code and other <b>DevOps</b> principles.</li>
+          <li>Wrote several <b>Python</b> serverless functions hosted on GCP Cloud Functions, as both scheduled and event-driven functions, to ingest webhooks, transform data, automate backups and monitor systems.</li>
           <li>Troubleshooted <b>Docker</b> images operating within a microservices framework.</li>
           <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing, managed with <b>qtest</b>.</li>
+          <li>Liaised with stakeholders to form business requirements, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
           <li>Wrote technical docs, user guides, and knowledge base articles that are easy to find, read and understand.</li>
         </ul>
       </p>
@@ -385,7 +385,7 @@ export const experience: TimelineItem[] = [
         Starting in the two-year graduate program, I was a Transport Planning consultant working on 
         software development, data analytics, traffic & transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li> .NET application development with <b>C#</b>, WinForms and <b>MS SQL Server</b> to automate data analytics (using Entity Framework, LINQ, and SQL).</li>
+          <li>Developed a <b>.NET application </b>using C#, WinForms and MS SQL Server to automate data analytics, including the design of the database schema and integration with Excel interop.</li>
           <li>Used <b>VBA</b> in Excel for data analytics & visualisations of traffic data, Opal data and other transport datasets.</li>
           <li>Conducted local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
         </ul>
