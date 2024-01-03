@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   CalendarIcon,
-  // BuildingOffice2Icon,
+  BuildingOffice2Icon,
   EnvelopeIcon,
   FlagIcon,
   MapIcon,
@@ -84,13 +84,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        <strong className='text-stone-100'></strong>
-        I am a London-based software developer and consultant currently working at Cognizant Servian.
-      </p>
-      <p className='prose-sm text-stone-200 sm:prose-base lg:prose-lg'>
-        Experienced in .NET framework, APIs, website & application development, and cloud infrastructure. 
-        Working as a consultant for over 6 years with many businesses and government clients, I have 
-        developed key project management and client-facing skills alongside my strong technical expertise.
+        A .NET software engineer and consultant with over 6 years experience building software applications, websites, APIs, databases, data platforms and cloud infrastructure.
       </p>
     </>
   ),
@@ -115,14 +109,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `A natural problem solver and thinker, I feel at home when inside an IDE.`,
+  description: ``,
   aboutItems: [
     { label: 'Location', text: 'London, UK', Icon: MapIcon },
-    { label: 'Study', text: 'University of New South Wales', Icon: AcademicCapIcon },
+    { label: 'Alma mater', text: 'University of New South Wales', Icon: AcademicCapIcon },
     { label: 'Interests', text: 'Gym, Volleyball, Hiking', Icon: SparklesIcon },
     { label: 'Age', text: '30', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Australian', Icon: FlagIcon },
-    // { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
+    { label: 'Employment', text: 'Cognizant Servian', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -212,7 +206,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'GCP (Functions, Storage, Build (CI/CD), IAM, BigQuery, Scheduler, Pub/Sub)',
+        name: 'GCP (BigQuery, Cloud Functions, Cloud Storage, Cloud Build, Pub/Sub)',
         level: 8,
       },
       {
@@ -348,12 +342,11 @@ export const experience: TimelineItem[] = [
         As a software engineer and consultant I continued to develop my technical expertise with more cloud-native software development and enterprise solutions,
         while further enhancing my project management and client-facing skills.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Extended a <b>REST</b> and <b>GraphQL</b> API with <b>ASP.NET Core</b> using <b>C#</b>, <b>Entity Framework</b> and <b>MS SQL Server</b>, improving an existing public API and database to further drive digital adoption for an enterprise client.</li>
-          <li>Developed websites using <b>React</b> in <b>JavaScript</b>, using frameworks such as NextJS and Tailwind CSS to create high-quality user experiences.</li>
-          <li>Architected <b>cloud infrastructure</b> solutions for the Google Cloud Platform, wrote <b>Terraform</b> code and deployed it following Infrastructure as Code and other <b>DevOps</b> principles.</li>
-          <li>Wrote several <b>Python</b> serverless functions hosted on GCP Cloud Functions, as both scheduled and event-driven functions, to ingest webhooks, transform data, automate backups and monitor systems.</li>
-          <li>Troubleshooted <b>Docker</b> images operating within a microservices framework.</li>
-          <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing, managed with <b>qtest</b>.</li>
+          <li>Extended the public API and database for a large digital consignment system on <b>C# ASP.NET Core</b>, adding around ten new <b>REST</b> and <b>GraphQL</b> endpoints to provide extended functionality and support new operations.</li>
+          <li>Developed new website features on the new digital consignment system using <b>React</b> in <b>JavaScript</b>, including new access identities, a new commenting system, user settings page and support for file attachments. This advanced the client's strategic goal of eventually phasing out the paper-based consignment system.</li>
+          <li>Migrated legacy data platforms onto the <b>Google Cloud Platform</b> using BigQuery, architecting the cloud solution, writing <b>Terraform</b> code and deployed using Infrastructure as Code and other DevOps principles.</li>
+          <li>Wrote numerous <b>Python</b> serverless functions hosted on GCP Cloud Functions, as both scheduled and event-driven functions, that ingested webhooks, transformed data, performed automated backups and system monitoring.</li>
+          <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing as a QA tester, with test cases and test runs managed using <b>qtest</b>.</li>
           <li>Liaised with stakeholders to form business requirements, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
           <li>Wrote technical docs, user guides, and knowledge base articles that are easy to find, read and understand.</li>
         </ul>
@@ -366,12 +359,11 @@ export const experience: TimelineItem[] = [
     location: 'Senior Transport Planner',
     content: (
       <p>
-        Arcadis is a large engineering consultancy where I worked on the Central Station Renewal Project, Inland Rail, 
+        Arcadis is a large engineering consultancy where I worked on the Central Station Renewal Project, Inland Rail,
         Transport Access Programs, and traffic & transport strategies, working with Transport for NSW and local governments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Traffic and pedestrian modelling, including Legion micro-simulation modelling of Sydney's Central Station.</li>
-          <li>Transport data analytics to gain insights and inform transport planning assessments.</li>
-          <li>Wrote transport planning assessments, government strategy reports, and proposals to shape our urban environment.</li>
+          <li>Championed the use of software and programming in data analytics, automation and visualisations, providing expertise to other engineering disciplines on improving their workflows.</li>
+          <li>Performed transport data analytics, traffic modelling, pedestrian modelling, and strategic assessments to shape major developments and infrastructure projects around Sydney.</li>
         </ul>
       </p>
     ),
@@ -382,12 +374,15 @@ export const experience: TimelineItem[] = [
     location: 'Transport Planner',
     content: (
       <p>
-        Starting in the two-year graduate program, I was a Transport Planning consultant working on 
+        Starting in the two-year graduate program, I was a Transport Planning consultant working on
         software development, data analytics, traffic & transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Developed a <b>.NET application </b>using C#, WinForms and MS SQL Server to automate data analytics, including the design of the database schema and integration with Excel interop.</li>
-          <li>Used <b>VBA</b> in Excel for data analytics & visualisations of traffic data, Opal data and other transport datasets.</li>
-          <li>Conducted local area transport plans, corridor assessments and traffic & pedestrian modelling.</li>
+          <li>
+            Led the development of a <b>.NET application </b> using C#, WinForms and MS SQL Server that automated data analytics and Excel reports and graphs.
+            This eliminated much of data wrangling & report creation tasks, reducing analysts' workload by over 90%. As a result analysts could focus on more interesting
+            analytical work, vastly expanding the quality and depth of the insights provided to the wider business
+          </li>
+          <li>Used <b>VBA</b> in Excel to automate the analytics of traffic data, Opal data and other transport datasets.</li>
         </ul>
       </p>
     ),
@@ -404,7 +399,7 @@ export const projects: TimelineItem[] = [
       <div className="flex flex-col gap-y-2">
         <p>
           eNVD is Australia's digital red meat integrity system, providing assurance and livestock traceability
-          for the Australian red meat industry, ensuring the product is clean, safe and natural. The digital system 
+          for the Australian red meat industry, ensuring the product is clean, safe and natural. The digital system
           would replace existing paper-based systems, reducing costs whilst improving access, traceability and integration
           with other systems.
         </p>
@@ -469,12 +464,12 @@ export const projects: TimelineItem[] = [
           <a className="inline-flex mx-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://reactresume.com">
             React Resume
           </a>
-          open-source template, it is on <b>AWS Amplify</b>, 
+          open-source template, it is on <b>AWS Amplify</b>,
           <Link className="inline-flex mx-1 font-medium text-blue-600 underline dark:text-blue-500 no-underline" href="/#contact">
             'Get in touch'
-          </Link> 
-          form submissions forwarded to my email inbox 
-          via a GraphQL backend and <b>AWS SES</b>, downloadable assets hosted on <b>S3 buckets</b>, and domain name from CloudFront. 
+          </Link>
+          form submissions forwarded to my email inbox
+          via a GraphQL backend and <b>AWS SES</b>, downloadable assets hosted on <b>S3 buckets</b>, and domain name from CloudFront.
         </p>
         <p className="flex gap-x-1">
           <a className="flex gap-x-1 font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" target="_blank" href="https://github.com/hnorm/norman-app">
