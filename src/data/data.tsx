@@ -334,7 +334,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Mar 2022 - Present',
+    date: 'Mar 2022 - Jan 2024',
     title: 'Cognizant Servian',
     location: 'Consultant',
     content: (
@@ -342,12 +342,12 @@ export const experience: TimelineItem[] = [
         As a software engineer and consultant I continued to develop my technical expertise with more cloud-native software development and enterprise solutions,
         while further enhancing my project management and client-facing skills.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Extended the public API and database for a large digital consignment system on <b>C# ASP.NET Core</b>, adding around ten new <b>REST</b> and <b>GraphQL</b> endpoints to provide extended functionality and support new operations.</li>
-          <li>Developed new website features on the new digital consignment system using <b>React</b> in <b>JavaScript</b>, including new access identities, a new commenting system, user settings page and support for file attachments. This advanced the client's strategic goal of eventually phasing out the paper-based consignment system.</li>
-          <li>Migrated legacy data platforms onto the <b>Google Cloud Platform</b> using BigQuery, architecting the cloud solution, writing <b>Terraform</b> code and deployed using Infrastructure as Code and other DevOps principles.</li>
-          <li>Wrote numerous <b>Python</b> serverless functions hosted on GCP Cloud Functions, as both scheduled and event-driven functions, that ingested webhooks, transformed data, performed automated backups and system monitoring.</li>
+          <li>Built new API endpoints, coding the backend logic and database migration for a large digital consignment system on <b>C# ASP.NET Core</b>. The new or improved <b>REST</b> and <b>GraphQL</b> endpoints provided additional functionality for the website, mobile app and third-party API users.</li>
+          <li>Developed new website features for a digital consignment system using <b>React</b> in <b>JavaScript</b>, including new access identities, a new commenting system, user settings page and support for file attachments. This advanced the client's strategic goal of eventually phasing out the paper-based consignment system.</li>
+          <li>Designed cloud infrastructure for data platforms on <b>Google Cloud Platform</b> with BigQuery, coded designs in <b>Terraform</b> and deployed using Infrastructure as Code and other DevOps principles. This enabled the migration of legacy data warehouses onto modern cloud solutions, providing more powerful and efficient data analytics.</li>
+          <li>Coded <b>Python</b> serverless functions (both scheduled and event-driven), leveraging cloud automation and orchestration to ingest webhooks, transform data, perform automated backups and system monitoring</li>
           <li>Designed test cases, conducted manual testing and <b>Cypress</b> testing as a QA tester, with test cases and test runs managed using <b>qtest</b>.</li>
-          <li>Liaised with stakeholders to form business requirements, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
+          <li>Collaborated with stakeholders to form business requirements, create user stories & acceptance criteria, and ran backlog grooming & prioritisation sessions to ensure the smooth delivery of projects.</li>
           <li>Wrote technical docs, user guides, and knowledge base articles that are easy to find, read and understand.</li>
         </ul>
       </p>
@@ -362,7 +362,7 @@ export const experience: TimelineItem[] = [
         Arcadis is a large engineering consultancy where I worked on the Central Station Renewal Project, Inland Rail,
         Transport Access Programs, and traffic & transport strategies, working with Transport for NSW and local governments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>Championed the use of software and programming in data analytics, automation and visualisations, providing expertise to other engineering disciplines on improving their workflows.</li>
+          <li>Increased the use of software and programming in data analytics, automation and visualisations, providing expertise to other engineering disciplines on improving their workflows.</li>
           <li>Performed transport data analytics, traffic modelling, pedestrian modelling, and strategic assessments to shape major developments and infrastructure projects around Sydney.</li>
         </ul>
       </p>
@@ -377,11 +377,7 @@ export const experience: TimelineItem[] = [
         Starting in the two-year graduate program, I was a Transport Planning consultant working on
         software development, data analytics, traffic & transport modelling and strategic assessments.
         <ul className="my-2 md:list-disc md:list-outside md:ml-4">
-          <li>
-            Led the development of a <b>.NET application </b> using C#, WinForms and MS SQL Server that automated data analytics and Excel reports and graphs.
-            This eliminated much of data wrangling & report creation tasks, reducing analysts' workload by over 90%. As a result analysts could focus on more interesting
-            analytical work, vastly expanding the quality and depth of the insights provided to the wider business
-          </li>
+          <li>Led the development of a <b>.NET application</b> using C#, WinForms and MS SQL Server, automating data analytics and generation of Excel reports and graphs. This reduced the tedious data wrangling and report creation tasks by over 90%, and vastly expanded the quality and depth insights of analysts could provide.</li>
           <li>Used <b>VBA</b> in Excel to automate the analytics of traffic data, Opal data and other transport datasets.</li>
         </ul>
       </p>
